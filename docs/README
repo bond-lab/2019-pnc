@@ -1,0 +1,7 @@
+
+rsync -avz /home/bond/papers/PNC/2019/www/PNC-2019-ebook.pdf  /home/bond/papers/PNC/2019/www/*.html  /home/bond/papers/PNC/2019/www/pics compling:/var/www/events/2019-pnc/
+
+
+
+# shrink the proceedings
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=program1.pdf PNC-2019-ebook.pdf 
